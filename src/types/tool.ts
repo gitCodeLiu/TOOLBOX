@@ -16,7 +16,8 @@ export type ToolCategory =
   | 'text'
   | 'converter'
   | 'generator'
-  | 'utility';
+  | 'utility'
+  | 'crypto';
 
 export interface Category {
   id: ToolCategory | 'all';

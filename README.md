@@ -18,6 +18,31 @@
 | 工具 | 类别 | 路径 | 详细文档 |
 |------|------|------|----------|
 | 📈 Excel 转折线图 | 数据处理 | `/tools/excel-to-chart` | [查看文档](./docs/tools/excel-to-chart.md) |
+| 📋 JSON 格式化 | 格式转换 | `/tools/json-formatter` | [查看文档](./docs/tools/json-formatter.md) |
+| 🔄 YAML ↔ JSON | 格式转换 | `/tools/yaml-json` | [查看文档](./docs/tools/yaml-json.md) |
+| 📊 CSV ↔ JSON | 格式转换 | `/tools/csv-json` | [查看文档](./docs/tools/csv-json.md) |
+| 📝 Markdown 预览 | 格式转换 | `/tools/markdown-preview` | [查看文档](./docs/tools/markdown-preview.md) |
+| 🎨 颜色格式转换 | 格式转换 | `/tools/color-converter` | [查看文档](./docs/tools/color-converter.md) |
+| 🔐 Base64 编解码 | 编码/加密 | `/tools/base64-codec` | [查看文档](./docs/tools/base64-codec.md) |
+| 🔗 URL 编解码 | 编码/加密 | `/tools/url-codec` | [查看文档](./docs/tools/url-codec.md) |
+| 🔡 Unicode 编解码 | 编码/加密 | `/tools/unicode-codec` | [查看文档](./docs/tools/unicode-codec.md) |
+| 🏷️ HTML 实体编解码 | 编码/加密 | `/tools/html-entity-codec` | [查看文档](./docs/tools/html-entity-codec.md) |
+| 🎫 JWT 解析 | 编码/加密 | `/tools/jwt-decoder` | [查看文档](./docs/tools/jwt-decoder.md) |
+| 🔏 哈希计算 | 编码/加密 | `/tools/hash-calculator` | [查看文档](./docs/tools/hash-calculator.md) |
+| 🔒 AES 加解密 | 编码/加密 | `/tools/aes-crypto` | [查看文档](./docs/tools/aes-crypto.md) |
+| ⏱️ 时间戳转换 | 实用工具 | `/tools/timestamp-converter` | [查看文档](./docs/tools/timestamp-converter.md) |
+| 🌍 时区换算 | 实用工具 | `/tools/timezone-converter` | [查看文档](./docs/tools/timezone-converter.md) |
+| 📏 单位换算 | 实用工具 | `/tools/unit-converter` | [查看文档](./docs/tools/unit-converter.md) |
+| 🔢 进制转换 | 实用工具 | `/tools/number-base` | [查看文档](./docs/tools/number-base.md) |
+| 🀄 数字大写转换 | 实用工具 | `/tools/chinese-number` | [查看文档](./docs/tools/chinese-number.md) |
+| 🆔 UUID 生成器 | 内容生成 | `/tools/uuid-generator` | [查看文档](./docs/tools/uuid-generator.md) |
+| 📱 二维码生成 | 内容生成 | `/tools/qrcode-generator` | [查看文档](./docs/tools/qrcode-generator.md) |
+| 📊 字数统计 | 文本工具 | `/tools/word-count` | [查看文档](./docs/tools/word-count.md) |
+| 🧹 文本去重 | 文本工具 | `/tools/text-dedup` | [查看文档](./docs/tools/text-dedup.md) |
+| 🔀 文本排序 | 文本工具 | `/tools/text-sort` | [查看文档](./docs/tools/text-sort.md) |
+| 🔤 大小写/命名转换 | 文本工具 | `/tools/case-converter` | [查看文档](./docs/tools/case-converter.md) |
+| 🔍 正则表达式测试 | 文本工具 | `/tools/regex-tester` | [查看文档](./docs/tools/regex-tester.md) |
+| 📄 文本对比 | 文本工具 | `/tools/text-diff` | [查看文档](./docs/tools/text-diff.md) |
 
 ---
 
@@ -50,6 +75,11 @@ npm run preview    # 本地预览生产构建
 | Recharts | - | 图表库 |
 | xlsx | - | Excel 解析 |
 | lucide-react | - | 图标库 |
+| js-yaml | - | YAML 解析与生成 |
+| marked | - | Markdown 转 HTML |
+| crypto-js | - | MD5/SHA/AES 加密计算 |
+| qrcode | - | 二维码生成 |
+| diff | - | 文本差异对比算法 |
 
 ### 选型说明
 
@@ -83,8 +113,34 @@ ToolBox/
 ├── src/
 │   ├── components/       # 公共组件（Navbar、ToolCard 等）
 │   ├── pages/            # 页面组件（首页等）
-│   ├── tools/            # 工具模块目录
-│   │   └── excel-to-chart/   # Excel 转折线图工具
+│   ├── tools/            # 工具模块目录（每个工具一个子目录）
+│   │   ├── excel-to-chart/       # Excel 转折线图
+│   │   ├── json-formatter/       # JSON 格式化
+│   │   ├── yaml-json/            # YAML ↔ JSON
+│   │   ├── csv-json/             # CSV ↔ JSON
+│   │   ├── markdown-preview/     # Markdown 预览
+│   │   ├── color-converter/      # 颜色格式转换
+│   │   ├── base64-codec/         # Base64 编解码
+│   │   ├── url-codec/            # URL 编解码
+│   │   ├── unicode-codec/        # Unicode 编解码
+│   │   ├── html-entity-codec/    # HTML 实体编解码
+│   │   ├── jwt-decoder/          # JWT 解析
+│   │   ├── hash-calculator/      # 哈希计算
+│   │   ├── aes-crypto/           # AES 加解密
+│   │   ├── timestamp-converter/  # 时间戳转换
+│   │   ├── timezone-converter/   # 时区换算
+│   │   ├── unit-converter/       # 单位换算
+│   │   ├── number-base/          # 进制转换
+│   │   ├── chinese-number/       # 数字大写转换
+│   │   ├── uuid-generator/       # UUID 生成器
+│   │   ├── qrcode-generator/     # 二维码生成
+│   │   ├── word-count/           # 字数统计
+│   │   ├── text-dedup/           # 文本去重
+│   │   ├── text-sort/            # 文本排序
+│   │   ├── case-converter/       # 大小写/命名转换
+│   │   ├── regex-tester/         # 正则表达式测试
+│   │   └── text-diff/            # 文本对比
+│   ├── components/       # 公共组件（Navbar、ToolCard、ToolPageLayout、CopyButton 等）
 │   ├── data/             # 工具注册数据
 │   ├── types/            # TypeScript 类型定义
 │   ├── utils/            # 工具函数（Excel 解析、数据处理等）
@@ -145,6 +201,7 @@ ToolBox/
 | 序号 | 标题 | 时间 | 类型 |
 |------|------|------|------|
 | [001](./iterations/ITERATION-001-项目初始化与首页.md) | 项目初始化与首页 | 2026-03-11 | 新功能 |
+| [002](./iterations/ITERATION-002-批量工具扩展.md) | 批量工具扩展（25个工具） | 2026-03-16 | 新功能 |
 
 ---
 
