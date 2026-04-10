@@ -18,6 +18,7 @@
 | 工具 | 类别 | 路径 | 详细文档 |
 |------|------|------|----------|
 | 📈 Excel 转折线图 | 数据处理 | `/tools/excel-to-chart` | [查看文档](./docs/tools/excel-to-chart.md) |
+| 🔗 Excel 关联合并 | 数据处理 | `/tools/excel-merge` | [查看文档](./docs/tools/excel-merge.md) |
 | 📋 JSON 格式化 | 格式转换 | `/tools/json-formatter` | [查看文档](./docs/tools/json-formatter.md) |
 | 🔄 YAML ↔ JSON | 格式转换 | `/tools/yaml-json` | [查看文档](./docs/tools/yaml-json.md) |
 | 📊 CSV ↔ JSON | 格式转换 | `/tools/csv-json` | [查看文档](./docs/tools/csv-json.md) |
@@ -115,6 +116,7 @@ ToolBox/
 │   ├── pages/            # 页面组件（首页等）
 │   ├── tools/            # 工具模块目录（每个工具一个子目录）
 │   │   ├── excel-to-chart/       # Excel 转折线图
+│   │   ├── excel-merge/          # Excel 关联合并
 │   │   ├── json-formatter/       # JSON 格式化
 │   │   ├── yaml-json/            # YAML ↔ JSON
 │   │   ├── csv-json/             # CSV ↔ JSON
@@ -202,6 +204,7 @@ ToolBox/
 |------|------|------|------|
 | [001](./iterations/ITERATION-001-项目初始化与首页.md) | 项目初始化与首页 | 2026-03-11 | 新功能 |
 | [002](./iterations/ITERATION-002-批量工具扩展.md) | 批量工具扩展（25个工具） | 2026-03-16 | 新功能 |
+| [003](./iterations/ITERATION-003-Excel关联合并工具.md) | Excel 关联合并工具 | 2026-04-09 | 新功能 |
 
 ---
 

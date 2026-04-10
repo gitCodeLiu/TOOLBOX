@@ -13,6 +13,16 @@ export const TOOLS: Tool[] = [
     icon: '📈',
     isHot: true,
   },
+  {
+    id: 'excel-merge',
+    name: 'Excel 关联合并',
+    description: '上传源表与增强表，按 1～2 个字段关联，将匹配行的列补充或覆盖到源表并导出为新 Excel。',
+    category: 'data',
+    tags: ['excel', '合并', '关联', 'vlookup', '表格', '数据'],
+    path: '/tools/excel-merge',
+    icon: '🔗',
+    isNew: true,
+  },
 
   // ── 格式转换 ──────────────────────────────────────────────────────────
   {

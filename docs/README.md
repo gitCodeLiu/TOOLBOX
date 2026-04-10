@@ -11,6 +11,7 @@
 | 工具名称 | 文档文件 | 对应路径 |
 |---------|---------|---------|
 | 📈 Excel 转折线图 | [excel-to-chart.md](./tools/excel-to-chart.md) | `/tools/excel-to-chart` |
+| 🔗 Excel 关联合并 | [excel-merge.md](./tools/excel-merge.md) | `/tools/excel-merge` |
 | 📋 JSON 格式化 | [json-formatter.md](./tools/json-formatter.md) | `/tools/json-formatter` |
 | 🔄 YAML ↔ JSON | [yaml-json.md](./tools/yaml-json.md) | `/tools/yaml-json` |
 | 📊 CSV ↔ JSON | [csv-json.md](./tools/csv-json.md) | `/tools/csv-json` |

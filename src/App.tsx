@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 
 // 数据处理
 import ExcelToChartPage from './tools/excel-to-chart/ExcelToChartPage';
+import ExcelMergePage from './tools/excel-merge/ExcelMergePage';
 
 // 格式转换
 import JsonFormatterPage from './tools/json-formatter/JsonFormatterPage';
@@ -52,6 +53,7 @@ export default function App() {
 
             {/* 数据处理 */}
             <Route path="/tools/excel-to-chart" element={<ExcelToChartPage />} />
+            <Route path="/tools/excel-merge" element={<ExcelMergePage />} />
 
             {/* 格式转换 */}
             <Route path="/tools/json-formatter" element={<JsonFormatterPage />} />
