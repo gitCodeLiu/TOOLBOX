@@ -163,7 +163,7 @@ ToolBox/
 
 ### 规则一：迭代记录（每次必做）
 
-在 `iterations/` 目录下新建迭代文档，完成后更新 `iterations/README.md` 中的迭代历史表格。
+在 `iterations/` 目录按天维护迭代文档：同一天内的多次开发统一记录到同一个迭代文件；跨天再新增下一序号文件。完成后更新 `iterations/README.md` 中的迭代历史表格。
 
 **文件命名**：`ITERATION-<序号>-<简短描述>.md`（序号三位，从 001 起严格递增）
 
@@ -195,7 +195,7 @@ ToolBox/
 4. 在 `src/App.tsx` 中添加路由
 5. 在 `docs/tools/` 下创建工具说明文档 **（规则二）**
 6. 更新 `docs/README.md` 工具列表 **（规则二）**
-7. 在 `iterations/` 下新建迭代文档，更新 `iterations/README.md` **（规则一）**
+7. 在 `iterations/` 下按天记录迭代文档并更新 `iterations/README.md` **（规则一）**
 8. 更新本文件"已有工具"表格 **（规则二）**
 
 ### 迭代历史
@@ -205,6 +205,8 @@ ToolBox/
 | [001](./iterations/ITERATION-001-项目初始化与首页.md) | 项目初始化与首页 | 2026-03-11 | 新功能 |
 | [002](./iterations/ITERATION-002-批量工具扩展.md) | 批量工具扩展（25个工具） | 2026-03-16 | 新功能 |
 | [003](./iterations/ITERATION-003-Excel关联合并工具.md) | Excel 关联合并工具 | 2026-04-09 | 新功能 |
+| [004](./iterations/ITERATION-004-单位换算类别扩展.md) | 单位换算类别扩展 | 2026-04-09 | 功能增强 |
+| [005](./iterations/ITERATION-005-JSON格式化折叠预览与布局交互优化.md) | JSON 格式化折叠预览与布局交互优化（按天聚合） | 2026-05-08 | 功能增强 |
 
 ---
 
